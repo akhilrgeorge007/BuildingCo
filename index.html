@@ -3,34 +3,55 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Startup Company Landing Page</title>
+    <title>BuildingCo</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <script src = "./main.js">
+      
+    </script>
     <header>
+      
       <nav>
-        <div class="logo"><img src="./images/square-format,-transparent-background,-shadow-designify.png" alt="Startup Company Logo"></div>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </nav>
-      <div class="hero-image">
-        <div class="hero-text">
-          <h1>Welcome to <FONT COLOR="#ff0000" >BuildingCo</FONT></h1>
-          <p>We offer innovative solutions to your business needs.</p>
-          <button>Get Started</button>
+        <div class="logo"><img src="./images/square-format,-transparent-background,-shadow-designify.png" alt="BuildingCo Logo"></div>
+        <div class="desktop">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#aboutUs">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contactUs">Contact Us</a></li>
+          </ul>
         </div>
+        <div class="mobile">
+        <ul class="desktop-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#aboutUs">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contactUs">Contact Us</a></li>
+        </ul>
+        <button class="hamburger" onclick="menudisplay()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
+      </nav>
+
+      
     </header>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Welcome to <FONT COLOR="#ff0000" >BuildingCo</FONT></h1>
+        <p>We offer innovative solutions to your business needs.</p>
+        <button>Get Started</button>
+      </div>
+    </div>
     <main>
-      <section>
+      <section id="aboutUs">
         <h2>About Us</h2>
         <p>We are a team of experts dedicated to providing top-quality services to businesses of all sizes. Our mission is to help our clients achieve their goals and succeed in their industries.</p>
       </section>
-      <section>
+      <section id="services">
         <h2>Services</h2>
         <div class="services">
           <div class="service">
@@ -50,7 +71,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="contactUs">
         <h2>Contact Us</h2>
         <form>
           <label for="name">Name:</label>
@@ -64,15 +85,17 @@
       </section>
     </main>
     <footer>
-      <div class="footer-logo"><img src="./images/square-format,-transparent-background,-shadow-designify.png" alt="Startup Company Logo"></div>
+      <div class="footer-logo"><img src="./images/square-format,-transparent-background,-shadow-designify.png" alt="BuildingCo logo"></div>
       <div class="social-icons">
         <a href="#"><i class="fab fa-facebook"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
-      <p>&copy; 2023 Startup Company. All Rights
+      <p>&copy; 2023 BuildingCo. All Rights
         Reserved.</p>
     </footer>
+
   </body>
+  
 </html>
 

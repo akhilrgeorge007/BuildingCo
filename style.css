@@ -13,10 +13,7 @@
   
   /* Header Styles */
   header {
-	background-image: url("./images/backdrop.jpg");
-	background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+	
 	color: #000;
 	display: flex;
 	flex-direction: column;
@@ -67,7 +64,10 @@
   }
   
   .hero-image {
-	background-image: url("hero-image.jpg");
+	background-image: url("./images/backdrop.jpg");
+	background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -231,5 +231,193 @@
 	font-size: 0.8rem;
 	margin-top: 2rem;
   }
+
+  .hamburger{
+	display: none;
+  }
+
+  .desktop{
+	display: flex;
+  }
+
+  .mobile{
+	display: none;
+  }
+
+
+
+  @media only screen and (max-width: 768px){
+	/* Header Styles */
+	header {
+	  padding: 0.5rem;
+	}
+
+	.desktop{
+		display: none;
+	  }
+	
+	  .mobile{
+		display: flex;
+	  }
+	/* Navbar styles for mobile */
+	nav {
+		flex-direction: column;
+		align-items: flex-start;
+	  }
+	  
+	  nav ul {
+		flex-direction: column;
+		width: 100%;
+		margin-top: 1rem;
+	  }
+	  
+	  nav ul li {
+		margin-left: 0;
+		margin-bottom: 1rem;
+	  }
+	  
+	  .logo {
+		margin-bottom: 1rem;
+	  }
+	  
+	  /* Hamburger menu styles */
+	  .hamburger {
+		display: block;
+		cursor: pointer;
+		padding: 0.5rem;
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		z-index: 1;
+	  }
+	  
+	  .hamburger span {
+		background-color: #000;
+		display: block;
+		height: 3px;
+		margin-bottom: 5px;
+		width: 25px;
+	  }
+	  
+	  /* Hide the desktop menu */
+	  .desktop-menu {
+		display: none;
+	  }
   
+	.logo {
+	  font-size: 1.5rem;
+	}
   
+	.logo img {
+	  max-width: 30%;
+	  margin-right: 0.5rem;
+	}
+  
+	nav ul li {
+	  margin-left: 1rem;
+	}
+  
+	.hero-image {
+	  height: 60vh;
+	}
+  
+	.hero-text h1 {
+	  font-size: 2.5rem;
+	}
+  
+	.hero-text p {
+	  font-size: 1rem;
+	  margin-bottom: 1rem;
+	}
+  
+	button {
+	  font-size: 1rem;
+	  padding: 0.5rem 1rem;
+	}
+  
+	/* Main Styles */
+	section {
+	  margin-bottom: 2rem;
+	}
+  
+	h2 {
+	  font-size: 1.5rem;
+	  margin-bottom: 1rem;
+	}
+  
+	.services {
+	  flex-wrap: wrap;
+	  justify-content: center;
+	}
+  
+	.service {
+	  width: 80%;
+	  margin-bottom: 1rem;
+	}
+  
+	/* Form Styles */
+	form input[type="text"],
+	form input[type="email"],
+	form textarea {
+	  font-size: 1rem;
+	  padding: 0.5rem;
+	  margin-bottom: 0.5rem;
+	}
+  
+	form textarea {
+	  height: 8rem;
+	}
+  
+	button[type="submit"] {
+	  font-size: 1rem;
+	  padding: 0.5rem 1rem;
+	}
+  }
+  /*
+  @media only screen and (max-width: 768px) {
+	/* Navbar styles for mobile 
+	nav {
+	  flex-direction: column;
+	  align-items: flex-start;
+	}
+	
+	nav ul {
+	  flex-direction: column;
+	  width: 100%;
+	  margin-top: 1rem;
+	}
+	
+	nav ul li {
+	  margin-left: 0;
+	  margin-bottom: 1rem;
+	}
+	
+	.logo {
+	  margin-bottom: 1rem;
+	}
+	
+	/* Hamburger menu styles 
+	.hamburger {
+	  display: block;
+	  cursor: pointer;
+	  padding: 0.5rem;
+	  position: absolute;
+	  top: 1rem;
+	  right: 1rem;
+	  z-index: 1;
+	}
+	
+	.hamburger span {
+	  background-color: #000;
+	  display: block;
+	  height: 3px;
+	  margin-bottom: 5px;
+	  width: 25px;
+	}
+	
+	/* Hide the desktop menu 
+	.desktop-menu {
+	  display: none;
+	}
+  }
+  */
